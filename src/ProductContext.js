@@ -6,10 +6,17 @@ const ProductProvidor = ({ children }) => {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      let res = await fetch("https://fakestoreapi.com/products");
-      const data = await res.json();
-      //   console.log(data);
-      setProducts(data);
+      try {
+        let res = await fetch("https://fakestoreapi.com/products");
+        if (res.ok) {
+          let data = await res.json();
+          setProducts(data);
+        } else {
+          throw new Error("Connection Lost");
+        }
+      } catch (error) {
+        throw new Error("Issue with API link");
+      }
     };
     fetchProducts();
   }, []);
