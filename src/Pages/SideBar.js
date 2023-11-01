@@ -7,8 +7,8 @@ import { SidebarContext } from "../Context/SidebarContext";
 import { CartContext } from "../Context/CartContext";
 
 const SideBar = () => {
-  console.log(useContext(CartContext));
   const { isOpen, handleClose } = useContext(SidebarContext);
+  const { cart } = useContext(CartContext);
   return (
     <div
       className={`${
@@ -23,6 +23,11 @@ const SideBar = () => {
         >
           <IoMdArrowForward className="text-2xl" />
         </div>
+      </div>
+      <div>
+        {cart.map((item) => {
+          return <CartItem item={item} key={item.div} />;
+        })}
       </div>
     </div>
   );
