@@ -29,6 +29,17 @@ const SideBar = () => {
           return <CartItem item={item} key={item.div} />;
         })}
       </div>
+      <div>
+        {/* total */}
+        Sidebar
+        <div>
+          <span>Total:</span> $100
+        </div>
+        {/* clear cart */}
+        <div className="flex items-center justify-center w-12 h-12 py-4 text-xl text-white bg-red-500 cursor-pointer ">
+          <FiTrash2 />
+        </div>
+      </div>
     </div>
   );
 };
