@@ -1,4 +1,4 @@
-import React, { createContext, useState, useEffect, Children } from "react";
+import React, { createContext, useState, useEffect } from "react";
 
 export const CartContext = createContext();
 
@@ -15,7 +15,7 @@ const CartProvidor = ({ children }) => {
       return accumulator + currentItem.price * currentItem.amount;
     }, 0);
     setTotal(total);
-  });
+  }, [cart]);
 
   // Update Item Amount
   useEffect(() => {

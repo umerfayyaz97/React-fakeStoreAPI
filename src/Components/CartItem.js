@@ -11,14 +11,14 @@ const CartItem = ({ item }) => {
   return (
     <div className="flex w-full py-2 font-light text-gray-500 border-b lg:px-6 gap-x-4 ">
       <div className="w-full min-h-[150px] flex items-center gap-x-4 ">
-        <Link to={`/products/${id}`}>
+        <Link to={`/product/${id}`}>
           <img className="max-w-[80px]" src={image} alt="" />
         </Link>
         <div className="flex flex-col w-full">
           <div className="flex justify-between mb-2">
             {/* link */}
             <Link
-              to={`/products/${id}`}
+              to={`/product/${id}`}
               className="text-sm font-medium max-w-[240px] uppercase text-primary hover:underline"
             >
               {title}

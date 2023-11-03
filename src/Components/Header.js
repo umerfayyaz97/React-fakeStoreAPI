@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { SidebarContext } from "../Context/SidebarContext";
 import { BsBag } from "react-icons/bs";
 import { CartContext } from "../Context/CartContext";
-import { Link, useSearchParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo1 from "../img/logo1.png";
 
 const Header = () => {
