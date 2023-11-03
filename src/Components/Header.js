@@ -3,7 +3,7 @@ import { SidebarContext } from "../Context/SidebarContext";
 import { BsBag } from "react-icons/bs";
 import { CartContext } from "../Context/CartContext";
 import { Link, useSearchParams } from "react-router-dom";
-import logo1 from "../logo1.png";
+import logo1 from "../img/logo1.png";
 
 const Header = () => {
   // header state
@@ -23,9 +23,9 @@ const Header = () => {
     <header
       className={`${
         isActive ? "bg-white py-4 shadow-md" : "bg-none py-6"
-      } fixed  w-full z-10 transition-all`}
+      } fixed  w-full z-10 transition-all `}
     >
-      <div className="container flex items-center justify-between h-full mx-auto">
+      <div className="container flex items-center justify-between h-full px-6 mx-auto ">
         <Link to={"/"}>
           <div>
             <img className="w-[40px] " src={logo1} alt="" />
