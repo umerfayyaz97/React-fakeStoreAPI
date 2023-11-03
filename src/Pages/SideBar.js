@@ -13,7 +13,7 @@ const SideBar = () => {
     <div
       className={`${
         isOpen ? "right-0" : "-right-full"
-      } fixed top-0 w-full h-full bg-white shadow-2xl md:w-[35vw] xl:max-w-[30vw] transition-all duration-300 z-20 px-4 lg:px-[35px]`}
+      }  fixed top-0 w-full h-full bg-white shadow-2xl md:w-[35vw] xl:max-w-[30vw] transition-all duration-300 z-20 px-4 lg:px-[35px] overflow-y-auto`}
     >
       <div className="flex items-center justify-between py-6 border-b">
         <div className="text-sm font-semibold uppercase">
@@ -47,6 +47,18 @@ const SideBar = () => {
             <FiTrash2 />
           </div>
         </div>
+        <Link
+          to={"/"}
+          className="flex items-center justify-center w-full p-4 font-medium bg-gray-200 text-primary"
+        >
+          View Cart
+        </Link>
+        <Link
+          to={"/"}
+          className="flex items-center justify-center w-full p-4 font-medium text-white bg-primary"
+        >
+          Checkout
+        </Link>
       </div>
     </div>
   );

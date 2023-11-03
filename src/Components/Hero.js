@@ -26,6 +26,7 @@
 
 import React from "react";
 import hero1 from "../img/hero1.png";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -38,10 +39,16 @@ const Hero = () => {
             <div className="w-10 h-[2px] bg-red-500 mr-3"></div>New Trend
           </div>
           {/* title */}
-          <div className="text-[70px] leading-[1.1] font-light ">
+          <h1 className="text-[70px] leading-[1.1] font-light ">
             AUTUMN SALE STYLISH <br />
             <span className="font-semibold ">WOMENS</span>
-          </div>
+          </h1>
+          <Link
+            to={"/"}
+            className="self-start font-semibold uppercase border-b-2 border-primary"
+          >
+            Discover More
+          </Link>
         </div>
       </div>
     </section>
