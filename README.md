@@ -1,5 +1,7 @@
-# To Run This Project Locally, Make Clone and run `npm i`
+# To Run This Project Locally, Make Clone & Run Command `npm i`
 
-# Then Run `npm start` To Run Locally
+# Then, After Depencies Have Been Installed
+
+# Run Command `npm start` To Run Locally
 
 
