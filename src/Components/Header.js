@@ -18,6 +18,7 @@ const Header = () => {
       window.scrollY > 60 ? setIsActive(true) : setIsActive(false);
     });
   }, []);
+
   return (
     <header
       className={`${
