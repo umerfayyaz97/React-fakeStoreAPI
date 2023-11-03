@@ -2,17 +2,15 @@ import React, { useContext } from "react";
 import { ProductContext } from "../Context/ProductContext";
 import Product from "../Components/Product";
 import Hero from "../Components/Hero";
-import Footer from "../Components/Footer";
 
 const Home = () => {
   const { products } = useContext(ProductContext);
-  // console.log(products);
+
   const filteredProducts = products.filter((item) => {
     return (
       item.category === "men's clothing" || item.category === "women's clothing"
     );
   });
-  // console.log(filteredProducts);
 
   return (
     <div>
