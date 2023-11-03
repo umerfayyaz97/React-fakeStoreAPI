@@ -25,7 +25,6 @@
 // export default Hero;
 
 import React from "react";
-import hero1 from "../img/hero1.png";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
